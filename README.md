@@ -21,7 +21,7 @@ Repository Structure (Caroni Pilot)
 
 All scripts, data preparation code, and metadata for the Caroni pilot are organized in the AI MRV Blue Carbon – Caroni Repository, following open-source, reproducible data science standards.
 
-Directory	Description
+Directory	Description:  
 /01_raw/	Original input data (Sentinel-2 Excel files, LiDAR AGC raster, field plots).  
 /02_interim/	Cleaned and co-registered tables; merged pixel-level datasets (AGC + bands + NDVI + DEM).  
 /03_features/	Derived features and vegetation indices (NDVI, red-edge indices, etc.).  
