@@ -1,0 +1,51 @@
+Files description: 
+
+CSVs
+
+1. File: i 2025 may 27 Hoyos et al Raw data Panama mangrove AGBd AGCd plot level.csv
+
+Description: Raw data to calculate the plot level forest aboveground biomass and carbon density.
+
+
+2. File: ii 2025 may 20 Hoyos et al Panama mangrove AGBd AGCd plot level.csv
+
+Description: Aboveground biomass and carbon density estimates for the 41 mangroves plots.
+
+
+3. File: iii 2025 may 27 Hoyos et al Panama mangrove AGBd AGCd landscape level.csv
+
+Description: Aboveground biomass and carbon density estimates at landscape-level.
+
+
+GeoTIFFs
+
+4. iv-a 2025 may 27 Hoyos et al AGBd ParB.tif
+
+
+Description: Raster for Aboveground Biomass density for the Bay of Parita.
+
+
+5. iv-b 2025 may 27 Hoyos et al AGBd PTYB.tif
+
+Description: Raster for Aboveground Biomass density for the Bay of Panama.
+
+
+6. iv-c 2025 may 27 Hoyos et al AGCd ParB.tif
+
+Description: Raster for Aboveground Carbon density for the Bay of Parita.
+
+
+7. iv-d 2025 may 27 Hoyos et al AGCd PTYB.tif
+
+Description: Raster for Aboveground Carbon density for the Bay of Panama.
+
+
+Code
+
+8. v-a Bay of Parita AGBd AGCd landscape model.zip
+
+Description: Compressed folder including necessary files to train, validate, and generate the AGBd and AGCd rasters for the Bay of Parita. The folder contains the following files: i) ParB_AGBD_predict_Rcode.txt; mosaic_ParB.tif; ParB_training.csv; ParB_validation.csv
+
+9. v-b Bay of Panama AGBd AGCd landscape model.zip
+
+Description: Compressed folder including necessary files to train, validate, and generate the AGBd and AGCd rasters for the Bay of Panama. The folder contains the following files: i) PTYB_AGBD_predict_Rcode.txt; mosaic_PTYB.tif; PTYB_training.csv; PTYB_validation.csv
