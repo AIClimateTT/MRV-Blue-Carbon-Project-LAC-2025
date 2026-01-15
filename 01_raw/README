@@ -1,0 +1,28 @@
+**Processing was conducted in Google Earth Engine (GEE) to prepare surface reflectance imagery (Level-2A) from July 2015, representative of the LiDAR acquisition period.**
+  
+Steps:
+1) Image Selection   
+Platform: Sentinel-2 Level-2A surface reflectance.   
+Area: Caroni mangrove testbed, Trinidad (bounding box provided).   
+Time range: July 2015.  
+Filtered for <20% cloud cover.
+
+2) Cloud Masking  
+Applied SCL (Scene Classification Layer) to remove clouds and shadows.  
+Remaining cloudy pixels masked out (set to nodata = -9999).  
+
+3) Image Composition  
+Created a median composite (optionally switchable to mosaic) to ensure uniform coverage.  
+Resampled imagery to 20 m resolution to align with LiDAR and DEM datasets.  
+
+4) Spectral Index Calculation  
+Calculated:  
+NDVI = (B8 – B4) / (B8 + B4)  
+EVI = 2.5 × (B8 – B4) / (B8 + 6×B4 – 7.5×B2 + 1)  
+
+Added NDVI and EVI bands to image stack.
+
+5) Export  
+CSV: Exported pixel-level values (x, y coordinates, reflectance bands, NDVI, EVI).  
+Raster: Exported GeoTIFF for visualization and cross-validation with LiDAR.    
+Masked cloud pixels (-9999) excluded.  
